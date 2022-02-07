@@ -1,0 +1,148 @@
+<!--Code Edited by Erica Karrfalt
+Date: 1/27/2020-->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Dog Size</h1>
+    <p id="description" class="description text-center">
+      From little chihuahua to the large English Mastiff, What is the perfect size?
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Dog Size</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select Breed</option>
+        <option value="small">Chihuahua</option>
+        <option value="small medium">Beagle</option>
+        <option value="ediumLarge">Labrador Retriever</option>
+        <option value="large">English Mastiff</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Do you own a dog?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="almostSoon"
+          type="radio"
+          class="input-radio"
+        />Almost, soon</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite activity with a dog?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="cuddles">Cuddles</option>
+        <option value="fetch">Fetch</option>
+        <option value="hike">Hike</option>
+        <option value="guard">Guarding the House</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Where does a dog belong?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Outside"
+          type="checkbox"
+          class="input-checkbox"
+        />Outside</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="onTheCouch"
+          type="checkbox"
+          class="input-checkbox"
+        />On the Couch</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="inTheBed"
+          type="checkbox"
+          class="input-checkbox"
+        />In The Bed</label
+      >
+      
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
